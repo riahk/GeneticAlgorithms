@@ -4,7 +4,7 @@ var geneticSalesman = function(genes, assessFitness, initiateBloodline, mutate, 
     offspringPerSurvivor: 30
   };
 
-  /* -------------------- Complete me! -------------------- */
+  //TODO: look up clustering algorithm
   var offspring = [];
   for(var i = 0; i < options.offspringPerSurvivor ; i++) {
     var route = createRoute(genes);
@@ -45,7 +45,6 @@ var createRoute = function(cities){
 
 var alterRoute = function(route){
 
-  /* -------------------- Complete me! -------------------- */
   var newRoute = route.slice();
   var randomIndex1 = Math.floor(Math.random() * route.length);
   var randomIndex2 = Math.floor(Math.random() * route.length);
